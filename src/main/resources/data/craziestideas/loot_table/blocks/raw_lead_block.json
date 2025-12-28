@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "condition": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "craziestideas:raw_lead_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "craziestideas:blocks/raw_lead_block"
+}
