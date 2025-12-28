@@ -25,6 +25,7 @@ public class ModeCreativeModTabs {
                             (itemDisplayParameters, output) -> {
                                 output.accept(ModItems.LEAD_RAW);
                                 output.accept(ModItems.LEAD_INGOT);
+                                output.accept(ModItems.LEAD_NUGGET);
                             }
                     )
                     .build()
