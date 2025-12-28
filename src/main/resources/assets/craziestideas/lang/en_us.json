@@ -1,7 +1,10 @@
 {
+  "creativetab.craziestideas.craziest_items_tab": "Craziest Items",
+
   "item.craziestideas.lead_ingot": "Lead Ingot",
   "item.craziestideas.raw_lead": "Raw Lead",
 
+  "creativetab.craziestideas.craziest_blocks_tab": "Craziest Blocks",
   "block.craziestideas.lead_ore": "Lead Ore",
   "block.craziestideas.deepslate_lead_ore": "Deepslate Lead Ore",
   "block.craziestideas.raw_lead_block": "Block of Raw Lead",

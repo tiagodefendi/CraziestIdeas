@@ -2,6 +2,7 @@ package com.defendi.craziestideas;
 
 import com.defendi.craziestideas.block.ModBlocks;
 import com.defendi.craziestideas.item.ModItems;
+import com.defendi.craziestideas.item.ModeCreativeModTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -36,6 +37,7 @@ public class CraziestIdeas {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModeCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -51,20 +53,20 @@ public class CraziestIdeas {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.LEAD_RAW);
-            event.accept(ModItems.LEAD_INGOT);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.LEAD_ORE);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.LEAD_ORE);
-            event.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
-            event.accept(ModBlocks.RAW_LEAD_BLOCK);
-        }
+//        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+//            event.accept(ModItems.LEAD_RAW);
+//            event.accept(ModItems.LEAD_INGOT);
+//        }
+//
+//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+//            event.accept(ModBlocks.LEAD_BLOCK);
+//        }
+//
+//        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+//            event.accept(ModBlocks.LEAD_ORE);
+//            event.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
+//            event.accept(ModBlocks.RAW_LEAD_BLOCK);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
