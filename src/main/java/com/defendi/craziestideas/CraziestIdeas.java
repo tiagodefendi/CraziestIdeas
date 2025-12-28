@@ -1,5 +1,6 @@
 package com.defendi.craziestideas;
 
+import com.defendi.craziestideas.block.ModBlocks;
 import com.defendi.craziestideas.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class CraziestIdeas {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,8 +52,18 @@ public class CraziestIdeas {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.LEAD_INGOT);
             event.accept(ModItems.LEAD_RAW);
+            event.accept(ModItems.LEAD_INGOT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.LEAD_ORE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.LEAD_ORE);
+            event.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
+            event.accept(ModBlocks.RAW_LEAD_BLOCK);
         }
     }
 

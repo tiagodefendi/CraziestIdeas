@@ -1,4 +1,9 @@
 {
   "item.craziestideas.lead_ingot": "Lead Ingot",
-  "item.craziestideas.raw_lead": "Raw Lead"
+  "item.craziestideas.raw_lead": "Raw Lead",
+
+  "block.craziestideas.lead_ore": "Lead Ore",
+  "block.craziestideas.deepslate_lead_ore": "Deepslate Lead Ore",
+  "block.craziestideas.raw_lead_block": "Block of Raw Lead",
+  "block.craziestideas.lead_block": "Block of Lead"
 }
