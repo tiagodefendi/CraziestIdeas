@@ -1,5 +1,7 @@
 package com.defendi.craziestideas;
 
+import com.defendi.craziestideas.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +35,8 @@ public class CraziestIdeas {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -45,6 +49,10 @@ public class CraziestIdeas {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.LEAD_INGOT);
+            event.accept(ModItems.LEAD_RAW);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
