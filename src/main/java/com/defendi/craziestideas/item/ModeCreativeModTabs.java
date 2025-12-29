@@ -48,6 +48,8 @@ public class ModeCreativeModTabs {
                                 output.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
                                 output.accept(ModBlocks.RAW_LEAD_BLOCK);
                                 output.accept(ModBlocks.LEAD_BLOCK);
+
+                                output.accept(ModBlocks.MAGIC_BLOCK);
                             }
                     )
                     .build()

@@ -1,6 +1,7 @@
 package com.defendi.craziestideas.block;
 
 import com.defendi.craziestideas.CraziestIdeas;
+import com.defendi.craziestideas.block.custom.MagicBlock;
 import com.defendi.craziestideas.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -64,6 +65,18 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)
                     .mapColor(MapColor.DEEPSLATE)
+            )
+    );
+
+    // ==============================================================================
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock(
+            "magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(
+                            2f,
+                            2f
+                    )
+                    .requiresCorrectToolForDrops()
             )
     );
 
