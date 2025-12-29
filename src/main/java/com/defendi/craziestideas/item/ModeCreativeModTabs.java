@@ -26,6 +26,8 @@ public class ModeCreativeModTabs {
                                 output.accept(ModItems.LEAD_RAW);
                                 output.accept(ModItems.LEAD_INGOT);
                                 output.accept(ModItems.LEAD_NUGGET);
+
+                                output.accept(ModItems.CHISEL);
                             }
                     )
                     .build()

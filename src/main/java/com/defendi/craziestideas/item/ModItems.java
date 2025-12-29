@@ -1,6 +1,7 @@
 package com.defendi.craziestideas.item;
 
 import com.defendi.craziestideas.CraziestIdeas;
+import com.defendi.craziestideas.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -23,6 +24,11 @@ public class ModItems {
     public static final DeferredItem<Item> LEAD_RAW = ITEMS.register(
             "raw_lead",
             () -> new Item(new Item.Properties())
+    );
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register(
+            "chisel",
+            () -> new ChiselItem(new Item.Properties().durability(256))
     );
 
 
