@@ -26,6 +26,7 @@ public class ModItems {
             () -> new Item(new Item.Properties())
     );
 
+    // TOOLs ======================================================================
     public static final DeferredItem<Item> CHISEL = ITEMS.register(
             "chisel",
             () -> new ChiselItem(new Item.Properties().durability(256))
@@ -35,11 +36,13 @@ public class ModItems {
             () -> new ScrapperItem(new Item.Properties().durability(256))
     );
 
+    // FOODs ========================================================================
     public static final DeferredItem<Item> DRAGON_FRUIT = ITEMS.register(
             "dragon_fruit",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DRAGON_FRUIT))
     );
 
+    // FUELs ===============================================================================
     public static final DeferredItem<Item> BIRCH_BARK = ITEMS.register(
             "birch_bark",
             () -> new FuelItem(new Item.Properties(), 12000)

@@ -68,7 +68,7 @@ public class ModBlocks {
             )
     );
 
-    // ==============================================================================
+    // MISC  ==============================================================================
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock(
             "magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()

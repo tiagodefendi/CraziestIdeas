@@ -7,6 +7,9 @@
 
   "item.craziestideas.chisel": "Chisel",
   "item.craziestideas.scrapper": "Scrapper",
+  "tooltip.craziestideas.shift_down": "Hold §e§oShift§r to learn more",
+  "tooltip.craziestideas.chisel": "This tool can chisel blocks into bricks.",
+  "tooltip.craziestideas.scrapper": "This tool can strip birch logs and get some barks",
 
   "item.craziestideas.dragon_fruit": "Dragon Fruit",
 
@@ -19,5 +22,6 @@
   "block.craziestideas.raw_lead_block": "Block of Raw Lead",
   "block.craziestideas.lead_block": "Block of Lead",
 
-  "block.craziestideas.magic_block": "Magic Block"
+  "block.craziestideas.magic_block": "Magic Block",
+  "tooltip.craziestideas.magic_block": "It's leaking a strange energy from it..."
 }

@@ -7,6 +7,9 @@
 
   "item.craziestideas.chisel": "Talhadeira",
   "item.craziestideas.scrapper": "Descascador",
+  "tooltip.craziestideas.shift_down": "Segure §e§oShit§r para ver mais",
+  "tooltip.craziestideas.chisel": "Esta ferramenta pode talhar blocos em tijolos",
+  "tooltip.craziestideas.scrapper": "Esta ferramenta descascar troncos de bétula e obter algumas cascas",
 
   "item.craziestideas.dragon_fruit": "Pitaya",
 
@@ -19,5 +22,6 @@
   "block.craziestideas.raw_lead_block": "Bloco de Chumbo Bruto",
   "block.craziestideas.lead_block": "Bloco de Chumbo",
 
-  "block.craziestideas.magic_block": "Bloco Mágico"
+  "block.craziestideas.magic_block": "Bloco Mágico",
+  "tooltip.craziestideas.magic_block": "Uma energia estranha está vazando deste bloco..."
 }
