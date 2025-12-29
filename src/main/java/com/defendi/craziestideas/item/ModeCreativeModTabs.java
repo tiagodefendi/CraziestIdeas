@@ -28,6 +28,8 @@ public class ModeCreativeModTabs {
                                 output.accept(ModItems.LEAD_NUGGET);
 
                                 output.accept(ModItems.CHISEL);
+
+                                output.accept(ModItems.DRAGON_FRUIT);
                             }
                     )
                     .build()

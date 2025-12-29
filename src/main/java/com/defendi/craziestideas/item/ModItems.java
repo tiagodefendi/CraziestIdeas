@@ -15,12 +15,10 @@ public class ModItems {
             "lead_ingot",
             () -> new Item(new Item.Properties())
     );
-
     public static final DeferredItem<Item> LEAD_NUGGET = ITEMS.register(
             "lead_nugget",
             () -> new Item(new Item.Properties())
     );
-
     public static final DeferredItem<Item> LEAD_RAW = ITEMS.register(
             "raw_lead",
             () -> new Item(new Item.Properties())
@@ -29,6 +27,11 @@ public class ModItems {
     public static final DeferredItem<Item> CHISEL = ITEMS.register(
             "chisel",
             () -> new ChiselItem(new Item.Properties().durability(256))
+    );
+
+    public static final DeferredItem<Item> DRAGON_FRUIT = ITEMS.register(
+            "dragon_fruit",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.DRAGON_FRUIT))
     );
 
 
