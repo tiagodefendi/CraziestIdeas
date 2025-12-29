@@ -2,6 +2,8 @@ package com.defendi.craziestideas.item;
 
 import com.defendi.craziestideas.CraziestIdeas;
 import com.defendi.craziestideas.item.custom.ChiselItem;
+import com.defendi.craziestideas.item.custom.FuelItem;
+import com.defendi.craziestideas.item.custom.ScrapperItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -28,10 +30,19 @@ public class ModItems {
             "chisel",
             () -> new ChiselItem(new Item.Properties().durability(256))
     );
+    public static final DeferredItem<Item> SCRAPPER = ITEMS.register(
+            "scrapper",
+            () -> new ScrapperItem(new Item.Properties().durability(256))
+    );
 
     public static final DeferredItem<Item> DRAGON_FRUIT = ITEMS.register(
             "dragon_fruit",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DRAGON_FRUIT))
+    );
+
+    public static final DeferredItem<Item> BIRCH_BARK = ITEMS.register(
+            "birch_bark",
+            () -> new FuelItem(new Item.Properties(), 12000)
     );
 
 

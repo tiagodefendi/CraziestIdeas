@@ -19,7 +19,7 @@ public class ModeCreativeModTabs {
     public static Supplier<CreativeModeTab> CRAZIEST_ITEMS = CREATIVE_MODE_TAB.register(
             "craziest_items_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.LEAD_INGOT.get()))
+                    .icon(() -> new ItemStack(ModItems.DRAGON_FRUIT.get()))
                     .title(Component.translatable("creativetab.craziestideas.craziest_items_tab"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
@@ -28,8 +28,11 @@ public class ModeCreativeModTabs {
                                 output.accept(ModItems.LEAD_NUGGET);
 
                                 output.accept(ModItems.CHISEL);
+                                output.accept(ModItems.SCRAPPER);
 
                                 output.accept(ModItems.DRAGON_FRUIT);
+
+                                output.accept(ModItems.BIRCH_BARK);
                             }
                     )
                     .build()
@@ -42,7 +45,7 @@ public class ModeCreativeModTabs {
                             CraziestIdeas.MOD_ID,
                             "craziest_items_tab"
                     ))
-                    .icon(() -> new ItemStack(ModBlocks.LEAD_BLOCK))
+                    .icon(() -> new ItemStack(ModBlocks.MAGIC_BLOCK))
                     .title(Component.translatable("creativetab.craziestideas.craziest_blocks_tab"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
