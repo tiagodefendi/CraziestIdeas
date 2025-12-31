@@ -23,7 +23,7 @@ public class ModeCreativeModTabs {
                     .title(Component.translatable("creativetab.craziestideas.craziest_items_tab"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
-                                output.accept(ModItems.LEAD_RAW);
+                                output.accept(ModItems.RAW_LEAD);
                                 output.accept(ModItems.LEAD_INGOT);
                                 output.accept(ModItems.LEAD_NUGGET);
 

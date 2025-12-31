@@ -1,21 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
     "A": {
-      "item": "minecraft:stick"
+      "item": "craziestideas:lead_ingot"
     },
     "B": {
-      "item": "craziestideas:lead_ingot"
+      "item": "minecraft:stick"
     },
     "C": {
       "item": "craziestideas:lead_nugget"
     }
   },
   "pattern": [
-    " C ",
-    "CBC",
-    " A "
+    "CAC",
+    " B "
   ],
   "result": {
     "count": 1,

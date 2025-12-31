@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
     "craziestideas:lead_block",
+    "craziestideas:raw_lead_block",
     "craziestideas:lead_ore",
-    "craziestideas:deepslate_lead_ore",
-    "craziestideas:raw_lead_block"
+    "craziestideas:deepslate_lead_ore"
   ]
 }

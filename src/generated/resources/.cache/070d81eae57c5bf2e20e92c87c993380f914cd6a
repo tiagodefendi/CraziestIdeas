@@ -1,0 +1,3 @@
+// 1.21.1	2025-12-31T10:32:56.9196218	Tags for minecraft:block mod id craziestideas
+b6dbcce01ed7a12e4645671e9df4aa0875be092d data/minecraft/tags/block/mineable/pickaxe.json
+ea6c3e0801d225457cb2db48a78f448d56b36f7f data/minecraft/tags/block/needs_iron_tool.json

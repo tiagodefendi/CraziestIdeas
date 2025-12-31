@@ -2,7 +2,6 @@ package com.defendi.craziestideas.item;
 
 import com.defendi.craziestideas.CraziestIdeas;
 import com.defendi.craziestideas.item.custom.ChiselItem;
-import com.defendi.craziestideas.item.custom.FuelItem;
 import com.defendi.craziestideas.item.custom.ScrapperItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -21,7 +20,7 @@ public class ModItems {
             "lead_nugget",
             () -> new Item(new Item.Properties())
     );
-    public static final DeferredItem<Item> LEAD_RAW = ITEMS.register(
+    public static final DeferredItem<Item> RAW_LEAD = ITEMS.register(
             "raw_lead",
             () -> new Item(new Item.Properties())
     );
@@ -45,7 +44,7 @@ public class ModItems {
     // FUELs ===============================================================================
     public static final DeferredItem<Item> BIRCH_BARK = ITEMS.register(
             "birch_bark",
-            () -> new FuelItem(new Item.Properties(), 12000)
+            () -> new Item(new Item.Properties())
     );
 
 
