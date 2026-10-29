@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "craziestideas:block/white_lead_pressure_plate"
+    },
+    "powered=true": {
+      "model": "craziestideas:block/white_lead_pressure_plate_down"
+    }
+  }
+}

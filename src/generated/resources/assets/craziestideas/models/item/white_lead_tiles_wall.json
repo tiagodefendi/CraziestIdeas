@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "craziestideas:block/white_lead_tiles"
+  }
+}

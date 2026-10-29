@@ -31,13 +31,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LEAD_PRESSURE_PLATE);
         doorBlockWithRenderType(
                 ModBlocks.LEAD_DOOR.get(),
-                modLoc("blocks/lead_door_bottom"),
-                modLoc("blocks/lead_door_top"),
+                modLoc("block/lead_door_bottom"),
+                modLoc("block/lead_door_top"),
                 "cutout"
         );
         trapdoorBlockWithRenderType(
                 ModBlocks.LEAD_TRAPDOOR.get(),
-                modLoc("blocks/lead_trapdoor"),
+                modLoc("block/lead_trapdoor"),
                 true,
                 "cutout"
         );
@@ -108,13 +108,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.WHITE_LEAD_PRESSURE_PLATE);
         doorBlockWithRenderType(
                 ModBlocks.WHITE_LEAD_DOOR.get(),
-                modLoc("blocks/white_lead_door_bottom"),
-                modLoc("blocks/white_lead_door_top"),
+                modLoc("block/white_lead_door_bottom"),
+                modLoc("block/white_lead_door_top"),
                 "cutout"
         );
         trapdoorBlockWithRenderType(
                 ModBlocks.WHITE_LEAD_TRAPDOOR.get(),
-                modLoc("blocks/white_lead_trapdoor"),
+                modLoc("block/white_lead_trapdoor"),
                 true,
                 "cutout"
         );

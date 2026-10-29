@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "craziestideas:block/white_lead_bricks",
+    "side": "craziestideas:block/white_lead_bricks",
+    "top": "craziestideas:block/white_lead_bricks"
+  }
+}

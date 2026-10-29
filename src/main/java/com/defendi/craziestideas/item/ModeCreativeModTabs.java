@@ -80,10 +80,10 @@ public class ModeCreativeModTabs {
                                 output.accept(ModBlocks.WHITE_LEAD_TILES_WALL);
                                 output.accept(ModBlocks.WHITE_LEAD_TILES_FENCE);
                                 output.accept(ModBlocks.WHITE_LEAD_TILES_FENCE_GATE);
-                                output.accept(ModBlocks.WHITE_LEAD_PRESSURE_PLATE);
-                                output.accept(ModBlocks.WHITE_LEAD_BUTTON);
                                 output.accept(ModBlocks.WHITE_LEAD_DOOR);
                                 output.accept(ModBlocks.WHITE_LEAD_TRAPDOOR);
+                                output.accept(ModBlocks.WHITE_LEAD_PRESSURE_PLATE);
+                                output.accept(ModBlocks.WHITE_LEAD_BUTTON);
                                 // MISC
                                 output.accept(ModBlocks.MAGIC_BLOCK);
                             }

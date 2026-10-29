@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "craziestideas:block/white_lead_bricks"
+  }
+}

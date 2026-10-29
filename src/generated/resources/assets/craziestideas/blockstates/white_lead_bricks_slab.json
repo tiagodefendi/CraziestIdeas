@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "craziestideas:block/white_lead_bricks_slab"
+    },
+    "type=double": {
+      "model": "craziestideas:block/white_lead_bricks"
+    },
+    "type=top": {
+      "model": "craziestideas:block/white_lead_bricks_slab_top"
+    }
+  }
+}

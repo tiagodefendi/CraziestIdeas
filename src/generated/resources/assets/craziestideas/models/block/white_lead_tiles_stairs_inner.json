@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "craziestideas:block/white_lead_tiles",
+    "side": "craziestideas:block/white_lead_tiles",
+    "top": "craziestideas:block/white_lead_tiles"
+  }
+}
