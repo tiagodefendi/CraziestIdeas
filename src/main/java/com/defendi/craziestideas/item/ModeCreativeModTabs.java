@@ -59,13 +59,31 @@ public class ModeCreativeModTabs {
                                 output.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
                                 output.accept(ModBlocks.RAW_LEAD_BLOCK);
                                 output.accept(ModBlocks.LEAD_BLOCK);
+                                output.accept(ModBlocks.LEAD_PRESSURE_PLATE);
+                                output.accept(ModBlocks.LEAD_BUTTON);
+                                output.accept(ModBlocks.LEAD_DOOR);
+                                output.accept(ModBlocks.LEAD_TRAPDOOR);
                                 // WHITE LEAD
                                 output.accept(ModBlocks.WHITE_LEAD_ORE);
                                 output.accept(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE);
                                 output.accept(ModBlocks.RAW_WHITE_LEAD_BLOCK);
                                 output.accept(ModBlocks.WHITE_LEAD_BLOCK);
                                 output.accept(ModBlocks.WHITE_LEAD_BRICKS);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS_STAIRS);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS_SLAB);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS_WALL);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS_FENCE);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS_FENCE_GATE);
                                 output.accept(ModBlocks.WHITE_LEAD_TILES);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES_STAIRS);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES_SLAB);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES_WALL);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES_FENCE);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES_FENCE_GATE);
+                                output.accept(ModBlocks.WHITE_LEAD_PRESSURE_PLATE);
+                                output.accept(ModBlocks.WHITE_LEAD_BUTTON);
+                                output.accept(ModBlocks.WHITE_LEAD_DOOR);
+                                output.accept(ModBlocks.WHITE_LEAD_TRAPDOOR);
                                 // MISC
                                 output.accept(ModBlocks.MAGIC_BLOCK);
                             }

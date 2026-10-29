@@ -41,6 +41,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         ModItems.RAW_LEAD.get()
                 )
         );
+        dropSelf(ModBlocks.LEAD_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LEAD_BUTTON.get());
+        add(ModBlocks.LEAD_DOOR.get(),
+                block -> createDoorTable(
+                        ModBlocks.LEAD_DOOR.get()
+                )
+        );
+        dropSelf(ModBlocks.LEAD_TRAPDOOR.get());
         // WHITE LEAD ===============================================================
         dropSelf(ModBlocks.WHITE_LEAD_BLOCK.get());
         dropSelf(ModBlocks.RAW_WHITE_LEAD_BLOCK.get());
@@ -57,7 +65,33 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 )
         );
         dropSelf(ModBlocks.WHITE_LEAD_BRICKS.get());
+        dropSelf(ModBlocks.WHITE_LEAD_BRICKS_STAIRS.get());
+        add(ModBlocks.WHITE_LEAD_BRICKS_SLAB.get(),
+                block -> createSlabItemTable(
+                        ModBlocks.WHITE_LEAD_BRICKS_SLAB.get()
+                )
+        );
+        dropSelf(ModBlocks.WHITE_LEAD_BRICKS_WALL.get());
+        dropSelf(ModBlocks.WHITE_LEAD_BRICKS_FENCE.get());
+        dropSelf(ModBlocks.WHITE_LEAD_BRICKS_FENCE_GATE.get());
         dropSelf(ModBlocks.WHITE_LEAD_TILES.get());
+        dropSelf(ModBlocks.WHITE_LEAD_TILES_STAIRS.get());
+        add(ModBlocks.WHITE_LEAD_TILES_SLAB.get(),
+                block -> createSlabItemTable(
+                        ModBlocks.WHITE_LEAD_TILES_SLAB.get()
+                )
+        );
+        dropSelf(ModBlocks.WHITE_LEAD_TILES_WALL.get());
+        dropSelf(ModBlocks.WHITE_LEAD_TILES_FENCE.get());
+        dropSelf(ModBlocks.WHITE_LEAD_TILES_FENCE_GATE.get());
+        dropSelf(ModBlocks.WHITE_LEAD_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WHITE_LEAD_BUTTON.get());
+        add(ModBlocks.WHITE_LEAD_DOOR.get(),
+                block -> createDoorTable(
+                        ModBlocks.WHITE_LEAD_DOOR.get()
+                )
+        );
+        dropSelf(ModBlocks.WHITE_LEAD_TRAPDOOR.get());
         // MAGIC BLOCK ===================================================
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
     }
