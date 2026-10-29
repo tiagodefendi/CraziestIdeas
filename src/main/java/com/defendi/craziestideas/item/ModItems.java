@@ -25,6 +25,20 @@ public class ModItems {
             () -> new Item(new Item.Properties())
     );
 
+    // WHITE LEAD =========================================================================
+    public static final DeferredItem<Item> WHITE_LEAD_INGOT = ITEMS.register(
+            "white_lead_ingot",
+            () -> new Item(new Item.Properties())
+    );
+    public static final DeferredItem<Item> WHITE_LEAD_NUGGET = ITEMS.register(
+            "white_lead_nugget",
+            () -> new Item(new Item.Properties())
+    );
+    public static final DeferredItem<Item> RAW_WHITE_LEAD = ITEMS.register(
+            "raw_white_lead",
+            () -> new Item(new Item.Properties())
+    );
+
     // TOOLs ======================================================================
     public static final DeferredItem<Item> CHISEL = ITEMS.register(
             "chisel",

@@ -23,15 +23,20 @@ public class ModeCreativeModTabs {
                     .title(Component.translatable("creativetab.craziestideas.craziest_items_tab"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
+                                // LEAD
                                 output.accept(ModItems.RAW_LEAD);
                                 output.accept(ModItems.LEAD_INGOT);
                                 output.accept(ModItems.LEAD_NUGGET);
-
+                                // WHITE LEAD
+                                output.accept(ModItems.RAW_WHITE_LEAD);
+                                output.accept(ModItems.WHITE_LEAD_INGOT);
+                                output.accept(ModItems.WHITE_LEAD_NUGGET);
+                                // TOOLS
                                 output.accept(ModItems.CHISEL);
                                 output.accept(ModItems.SCRAPPER);
-
+                                // FOOD
                                 output.accept(ModItems.DRAGON_FRUIT);
-
+                                // FUEL
                                 output.accept(ModItems.BIRCH_BARK);
                             }
                     )
@@ -49,11 +54,19 @@ public class ModeCreativeModTabs {
                     .title(Component.translatable("creativetab.craziestideas.craziest_blocks_tab"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
+                                // LEAD
                                 output.accept(ModBlocks.LEAD_ORE);
                                 output.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
                                 output.accept(ModBlocks.RAW_LEAD_BLOCK);
                                 output.accept(ModBlocks.LEAD_BLOCK);
-
+                                // WHITE LEAD
+                                output.accept(ModBlocks.WHITE_LEAD_ORE);
+                                output.accept(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE);
+                                output.accept(ModBlocks.RAW_WHITE_LEAD_BLOCK);
+                                output.accept(ModBlocks.WHITE_LEAD_BLOCK);
+                                output.accept(ModBlocks.WHITE_LEAD_BRICKS);
+                                output.accept(ModBlocks.WHITE_LEAD_TILES);
+                                // MISC
                                 output.accept(ModBlocks.MAGIC_BLOCK);
                             }
                     )

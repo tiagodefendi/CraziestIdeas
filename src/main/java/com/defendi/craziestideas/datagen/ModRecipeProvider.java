@@ -113,6 +113,98 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_lead", has(ModItems.RAW_LEAD))
                 .save(recipeOutput);
 
+        // WHITE LEAD =========================================================
+        // Block
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.MISC,
+                        ModBlocks.WHITE_LEAD_BLOCK.get()
+                )
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.WHITE_LEAD_INGOT.get())
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
+                .save(recipeOutput);
+
+        // Ingot
+        ShapelessRecipeBuilder.shapeless(
+                        RecipeCategory.MISC,
+                        ModItems.WHITE_LEAD_INGOT.get(),
+                        9
+                )
+                .requires(ModBlocks.WHITE_LEAD_BLOCK.get())
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
+                .save(recipeOutput, "craziestideas:white_lead_ingot_from_block");
+
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.MISC,
+                        ModItems.WHITE_LEAD_INGOT.get()
+                )
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.WHITE_LEAD_NUGGET.get())
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
+                .save(recipeOutput, "craziestideas:white_lead_ingot_from_nugget");
+
+        List<ItemLike> whiteLeadSmeltable = List.of(
+                ModItems.RAW_WHITE_LEAD,
+                ModBlocks.WHITE_LEAD_ORE,
+                ModBlocks.DEEPSLATE_WHITE_LEAD_ORE
+        );
+
+        oreSmelting(
+                recipeOutput,
+                whiteLeadSmeltable,
+                RecipeCategory.MISC,
+                ModItems.WHITE_LEAD_INGOT.get(),
+                0.25f,
+                200,
+                "white_lead_ingot"
+        );
+
+        oreBlasting(
+                recipeOutput,
+                whiteLeadSmeltable,
+                RecipeCategory.MISC,
+                ModItems.WHITE_LEAD_INGOT.get(),
+                0.25f,
+                200,
+                "white_lead_ingot"
+        );
+
+        // Nugget
+        ShapelessRecipeBuilder.shapeless(
+                        RecipeCategory.MISC,
+                        ModItems.WHITE_LEAD_NUGGET.get(),
+                        9
+                )
+                .requires(ModItems.WHITE_LEAD_INGOT.get())
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
+                .save(recipeOutput);
+
+        // Raw Block
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.MISC,
+                        ModBlocks.RAW_WHITE_LEAD_BLOCK.get()
+                )
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_WHITE_LEAD.get())
+                .unlockedBy("has_raw_white_lead", has(ModItems.RAW_WHITE_LEAD))
+                .save(recipeOutput);
+
+        // Raw
+        ShapelessRecipeBuilder.shapeless(
+                        RecipeCategory.MISC,
+                        ModItems.RAW_WHITE_LEAD.get(),
+                        9
+                )
+                .requires(ModBlocks.RAW_WHITE_LEAD_BLOCK.get())
+                .unlockedBy("has_raw_white_lead", has(ModItems.RAW_WHITE_LEAD))
+                .save(recipeOutput);
+
         // TOOLs ======================================================================
         // Chisel
         ShapedRecipeBuilder.shaped(

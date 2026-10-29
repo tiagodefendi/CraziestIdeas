@@ -1,9 +1,12 @@
 {
   "creativetab.craziestideas.craziest_items_tab": "Craziest Items",
-
   "item.craziestideas.lead_ingot": "Lead Ingot",
   "item.craziestideas.lead_nugget": "Lead Nugget",
   "item.craziestideas.raw_lead": "Raw Lead",
+
+  "item.craziestideas.white_lead_ingot": "White Lead Ingot",
+  "item.craziestideas.white_lead_nugget": "White Lead Nugget",
+  "item.craziestideas.raw_white_lead": "Raw White Lead",
 
   "item.craziestideas.chisel": "Chisel",
   "item.craziestideas.scrapper": "Scrapper",
@@ -21,6 +24,13 @@
   "block.craziestideas.deepslate_lead_ore": "Deepslate Lead Ore",
   "block.craziestideas.raw_lead_block": "Block of Raw Lead",
   "block.craziestideas.lead_block": "Block of Lead",
+
+  "block.craziestideas.white_lead_ore": "White Lead Ore",
+  "block.craziestideas.deepslate_white_lead_ore": "Deepslate White Lead Ore",
+  "block.craziestideas.raw_white_lead_block": "Block of Raw White Lead",
+  "block.craziestideas.white_lead_block": "Block of White Lead",
+  "block.craziestideas.white_lead_bricks": "White Lead Bricks",
+  "block.craziestideas.white_lead_tiles": "White Lead Tiles",
 
   "block.craziestideas.magic_block": "Magic Block",
   "tooltip.craziestideas.magic_block": "It's leaking a strange energy from it..."

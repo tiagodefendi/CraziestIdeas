@@ -19,6 +19,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_LEAD_BLOCK);
         blockWithItem(ModBlocks.LEAD_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_LEAD_ORE);
+        // WHITE LEAD ==================================
+        blockWithItem(ModBlocks.WHITE_LEAD_BLOCK);
+        blockWithItem(ModBlocks.RAW_WHITE_LEAD_BLOCK);
+        blockWithItem(ModBlocks.WHITE_LEAD_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE);
+        blockWithItem(ModBlocks.WHITE_LEAD_BRICKS);
+        blockWithItem(ModBlocks.WHITE_LEAD_TILES);
         // MAGIC BLOCK ==================================
         blockWithItem(ModBlocks.MAGIC_BLOCK);
     }

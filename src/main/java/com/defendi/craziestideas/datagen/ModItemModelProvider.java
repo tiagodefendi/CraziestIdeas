@@ -17,6 +17,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LEAD_INGOT.get());
         basicItem(ModItems.LEAD_NUGGET.get());
         basicItem(ModItems.RAW_LEAD.get());
+        // WHITE LEAD ============================
+        basicItem(ModItems.WHITE_LEAD_INGOT.get());
+        basicItem(ModItems.WHITE_LEAD_NUGGET.get());
+        basicItem(ModItems.RAW_WHITE_LEAD.get());
 
         // TOOLs ===============================
         basicItem(ModItems.CHISEL.get());
