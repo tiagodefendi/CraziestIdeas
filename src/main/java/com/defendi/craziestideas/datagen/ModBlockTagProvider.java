@@ -25,6 +25,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_LEAD_BLOCK.get())
                 .add(ModBlocks.LEAD_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LEAD_ORE.get())
+                // WHITE LEAD ============================
+                .add(ModBlocks.WHITE_LEAD_BLOCK.get())
+                .add(ModBlocks.RAW_WHITE_LEAD_BLOCK.get())
+                .add(ModBlocks.WHITE_LEAD_ORE.get())
+                .add(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE.get())
+                .add(ModBlocks.WHITE_LEAD_BRICKS.get())
+                .add(ModBlocks.WHITE_LEAD_TILES.get())
                 // MAGIC BLOCK ============================
                 .add(ModBlocks.MAGIC_BLOCK.get())
                 ;
@@ -35,6 +42,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_LEAD_BLOCK.get())
                 .add(ModBlocks.LEAD_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LEAD_ORE.get())
+                // WHITE LEAD ============================
+                .add(ModBlocks.WHITE_LEAD_BLOCK.get())
+                .add(ModBlocks.RAW_WHITE_LEAD_BLOCK.get())
+                .add(ModBlocks.WHITE_LEAD_ORE.get())
+                .add(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE.get())
+                .add(ModBlocks.WHITE_LEAD_BRICKS.get())
+                .add(ModBlocks.WHITE_LEAD_TILES.get())
         ;
 
     }

@@ -41,6 +41,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         ModItems.RAW_LEAD.get()
                 )
         );
+        // WHITE LEAD ===============================================================
+        dropSelf(ModBlocks.WHITE_LEAD_BLOCK.get());
+        dropSelf(ModBlocks.RAW_WHITE_LEAD_BLOCK.get());
+        add(ModBlocks.WHITE_LEAD_ORE.get(),
+                block -> createOreDrop(
+                        ModBlocks.WHITE_LEAD_ORE.get(),
+                        ModItems.RAW_WHITE_LEAD.get()
+                )
+        );
+        add(ModBlocks.DEEPSLATE_WHITE_LEAD_ORE.get(),
+                block -> createOreDrop(
+                        ModBlocks.DEEPSLATE_WHITE_LEAD_ORE.get(),
+                        ModItems.RAW_WHITE_LEAD.get()
+                )
+        );
+        dropSelf(ModBlocks.WHITE_LEAD_BRICKS.get());
+        dropSelf(ModBlocks.WHITE_LEAD_TILES.get());
         // MAGIC BLOCK ===================================================
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
     }

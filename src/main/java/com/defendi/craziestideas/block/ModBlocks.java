@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -65,6 +66,78 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)
                     .mapColor(MapColor.DEEPSLATE)
+            )
+    );
+
+    // WHITE LEAD =========================================================================
+    public static final DeferredBlock<Block> WHITE_LEAD_BLOCK = registerBlock(
+            "white_lead_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(
+                            5f,
+                            6f
+                    )
+                    .requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> RAW_WHITE_LEAD_BLOCK = registerBlock(
+            "raw_white_lead_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .mapColor(MapColor.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> WHITE_LEAD_ORE = registerBlock(
+            "white_lead_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(
+                            3f,
+                            3f
+                    )
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)
+                    .mapColor(MapColor.STONE)
+            )
+    );
+    public static final DeferredBlock<Block> DEEPSLATE_WHITE_LEAD_ORE = registerBlock(
+            "deepslate_white_lead_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(
+                            4.5f,
+                            3f
+                    )
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)
+                    .mapColor(MapColor.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> WHITE_LEAD_BRICKS = registerBlock(
+            "white_lead_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(
+                            5f,
+                            6f
+                    )
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> WHITE_LEAD_TILES = registerBlock(
+            "white_lead_tiles",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(
+                            5f,
+                            6f
+                    )
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.METAL)
             )
     );
 
