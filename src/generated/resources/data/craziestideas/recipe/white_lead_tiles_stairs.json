@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "white_lead_tiles",
+  "key": {
+    "#": {
+      "item": "craziestideas:white_lead_tiles"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "craziestideas:white_lead_tiles_stairs"
+  }
+}

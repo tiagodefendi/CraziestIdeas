@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "white_lead_ingot",
+  "key": {
+    "#": {
+      "item": "craziestideas:white_lead_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "craziestideas:white_lead_trapdoor"
+  }
+}

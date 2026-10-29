@@ -113,6 +113,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_lead", has(ModItems.RAW_LEAD))
                 .save(recipeOutput);
 
+        // Redstone
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.REDSTONE,
+                        ModBlocks.LEAD_BUTTON.get()
+                )
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.LEAD_NUGGET.get())
+                .unlockedBy("has_lead_nugget", has(ModItems.LEAD_NUGGET))
+                .save(recipeOutput);
+        pressurePlate(
+                recipeOutput,
+                ModBlocks.LEAD_PRESSURE_PLATE.get(),
+                ModItems.LEAD_INGOT.get()
+        );
+        doorBuilder(
+                ModBlocks.LEAD_DOOR,
+                Ingredient.of(ModItems.LEAD_INGOT)
+        )
+                .group("lead_ingot")
+                .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT))
+                .save(recipeOutput);
+        trapdoorBuilder(
+                ModBlocks.LEAD_TRAPDOOR,
+                Ingredient.of(ModItems.LEAD_INGOT)
+        )
+                .group("lead_ingot")
+                .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT))
+                .save(recipeOutput);
+
         // WHITE LEAD =========================================================
         // Block
         ShapedRecipeBuilder.shaped(
@@ -203,6 +233,127 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 )
                 .requires(ModBlocks.RAW_WHITE_LEAD_BLOCK.get())
                 .unlockedBy("has_raw_white_lead", has(ModItems.RAW_WHITE_LEAD))
+                .save(recipeOutput);
+
+        // Bricks
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.WHITE_LEAD_BRICKS.get(),
+                 4
+                )
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModBlocks.WHITE_LEAD_BLOCK.get())
+                .unlockedBy("has_white_lead_block", has(ModBlocks.WHITE_LEAD_BLOCK))
+                .save(recipeOutput);
+        stairBuilder(
+                ModBlocks.WHITE_LEAD_BRICKS_STAIRS,
+                Ingredient.of(ModBlocks.WHITE_LEAD_BRICKS)
+        )
+                .group("white_lead_bricks")
+                .unlockedBy("has_white_lead_bricks", has(ModBlocks.WHITE_LEAD_BRICKS))
+                .save(recipeOutput);
+        slab(
+                recipeOutput,
+                RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.WHITE_LEAD_BRICKS_SLAB.get(),
+                ModBlocks.WHITE_LEAD_BRICKS.get()
+        );
+        fenceBuilder(
+                ModBlocks.WHITE_LEAD_BRICKS_FENCE,
+                Ingredient.of(ModBlocks.WHITE_LEAD_BRICKS)
+        )
+                .group("white_lead_bricks")
+                .unlockedBy("has_white_lead_bricks", has(ModBlocks.WHITE_LEAD_BRICKS))
+                .save(recipeOutput);
+        fenceGateBuilder(
+                ModBlocks.WHITE_LEAD_BRICKS_FENCE_GATE,
+                Ingredient.of(ModBlocks.WHITE_LEAD_BRICKS)
+        )
+                .group("white_lead_bricks")
+                .unlockedBy("has_white_lead_bricks", has(ModBlocks.WHITE_LEAD_BRICKS))
+                .save(recipeOutput);
+        wall(
+                recipeOutput,
+                RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.WHITE_LEAD_BRICKS_WALL.get(),
+                ModBlocks.WHITE_LEAD_BRICKS.get()
+        );
+
+
+        // Tiles
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.WHITE_LEAD_TILES.get(),
+                 4
+                )
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModBlocks.WHITE_LEAD_BRICKS.get())
+                .unlockedBy("has_white_lead_bricks", has(ModBlocks.WHITE_LEAD_BRICKS))
+                .save(recipeOutput);
+        stairBuilder(
+                ModBlocks.WHITE_LEAD_TILES_STAIRS,
+                Ingredient.of(ModBlocks.WHITE_LEAD_TILES)
+        )
+                .group("white_lead_tiles")
+                .unlockedBy("has_white_lead_tiles", has(ModBlocks.WHITE_LEAD_TILES))
+                .save(recipeOutput);
+        slab(
+                recipeOutput,
+                RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.WHITE_LEAD_TILES_SLAB.get(),
+                ModBlocks.WHITE_LEAD_TILES.get()
+        );
+        fenceBuilder(
+                ModBlocks.WHITE_LEAD_TILES_FENCE,
+                Ingredient.of(ModBlocks.WHITE_LEAD_TILES)
+        )
+                .group("white_lead_tiles")
+                .unlockedBy("has_white_lead_tiles", has(ModBlocks.WHITE_LEAD_TILES))
+                .save(recipeOutput);
+        fenceGateBuilder(
+                ModBlocks.WHITE_LEAD_TILES_FENCE_GATE,
+                Ingredient.of(ModBlocks.WHITE_LEAD_TILES)
+        )
+                .group("white_lead_tiles")
+                .unlockedBy("has_white_lead_tiles", has(ModBlocks.WHITE_LEAD_TILES))
+                .save(recipeOutput);
+        wall(
+                recipeOutput,
+                RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.WHITE_LEAD_TILES_WALL.get(),
+                ModBlocks.WHITE_LEAD_TILES.get()
+        );
+
+        // Redstone
+        ShapedRecipeBuilder.shaped(
+                        RecipeCategory.REDSTONE,
+                        ModBlocks.WHITE_LEAD_BUTTON.get()
+                )
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.WHITE_LEAD_NUGGET.get())
+                .unlockedBy("has_white_lead_nugget", has(ModItems.WHITE_LEAD_NUGGET))
+                .save(recipeOutput);
+        pressurePlate(
+                recipeOutput,
+                ModBlocks.WHITE_LEAD_PRESSURE_PLATE.get(),
+                ModItems.WHITE_LEAD_INGOT.get()
+        );
+        doorBuilder(
+                ModBlocks.WHITE_LEAD_DOOR,
+                Ingredient.of(ModItems.WHITE_LEAD_INGOT)
+        )
+                .group("white_lead_ingot")
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
+                .save(recipeOutput);
+        trapdoorBuilder(
+                ModBlocks.WHITE_LEAD_TRAPDOOR,
+                Ingredient.of(ModItems.WHITE_LEAD_INGOT)
+        )
+                .group("white_lead_ingot")
+                .unlockedBy("has_white_lead_ingot", has(ModItems.WHITE_LEAD_INGOT))
                 .save(recipeOutput);
 
         // TOOLs ======================================================================
